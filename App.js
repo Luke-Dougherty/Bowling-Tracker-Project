@@ -1,14 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import loginScreen from './src/screens/loginScreen/loginScreen';
 
-import login from './src/screens/login'
+
 
 const App = () => {
   return (
-    <SafeAreaView sytle={styles.root}>
-      <login />
+    <SafeAreaView style={styles.root}>
+      <loginScreen/>
     </SafeAreaView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
