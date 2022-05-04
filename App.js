@@ -1,12 +1,12 @@
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
-import loginScreen from './src/screens/loginScreen/loginScreen';
 
-
+import LoginScreen from './src/screens/loginScreen/LoginScreen';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.root}>
-      <loginScreen/>
+     <LoginScreen />
+     {/* <Text>Testing123423</Text> */}
     </SafeAreaView>
   )
 }

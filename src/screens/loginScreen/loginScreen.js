@@ -1,14 +1,29 @@
-import React from "react"
-import {View, Text } from "react-native"
+import React from 'react';
+import {View, Text, Image, StyleSheet, useWindowDimensions} from 'react-native';
+import Logo from '../../../assets/images/BowlingLogo.png';
 
 
 
-const loginScreen = () => {
+const LoginScreen = () => {
+    const {height} = useWindowDimensions();
     return(
-        <View>
-            <Text>login screen here</Text>
+        // <Text>TESTING</Text>
+        <View style={styles.root}>
+            <Image source={Logo} style={[styles.logo, {height: height * .3}]} resizeMode="contain"/>
         </View>
     )
 }
 
-export default loginScreen;
+const styles = StyleSheet.create({
+    root: {
+        alignItems: 'center',
+        padding: 20,
+    },
+    logo: {
+        width: '70%',
+        maxWidth: 300,
+        maxHeight: 300
+    },
+});
+
+export default LoginScreen
